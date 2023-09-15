@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+}
+.imgc{
+     height: 100%;
+     width: 100%;
+     object-position: center;
+     object-fit: cover;
+}
+.button{
+    position: absolute;
+    width: 15.5rem;
+    height: 5rem;
+   padding-top:24px ;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.button:hover{
+    animation: shadow 2s ease-in-out infinite normal;
+    letter-spacing:0.5rem;
+}
+@keyframes shadow {
+    0%{ 
+        background-color: red;
+        box-shadow: 0 0 50px red ;
+    }
+    25%{
+        background-color: green;
+        box-shadow: 0 0 45px green ;
+    }
+    50%{
+        background-color: blue;
+        box-shadow: 0 0 40px blue ;
+    }
+    75%{
+        background-color: red;
+        box-shadow: 0 0 35px red ;
+    }
+    100%{
+        background-color: blue;
+        box-shadow: 0 0 30px blue ; 
+    }
+}
